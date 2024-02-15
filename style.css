@@ -27,30 +27,47 @@ header {
     font-size: 24px;
 }
 
-main {
+main{
+    height: 100%;
     display: flex;
     flex-direction: column;
 }
 
-main p{
+main div{
+    display: flex;
+    flex-direction: column;
+}
+
+main div p{
     margin-top: 0px;
     font-size: 20px;
 }
 
 .backgroundImage {
     width: 100%;
-    height: 100%;
 
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.mainPageBackgroundImage {
-    background-image: url("src/backgroundMain.png");
+.wholePageBackgroundImage {
     background-size: cover;
-
     color: #FFFFFF;
+    height: 100%;
+}
+
+.splitPageBackgroundImage {
+    background-size: cover;
+    color: #FFFFFF;
+    height: 20%;
+}
+
+.basePageBackground{
+    background-color: #D2D9D3;
+    color: #252525;
+    height: auto;
+    flex-grow: 1;
 }
 
 .iconImage {
@@ -102,4 +119,29 @@ footer div {
 
     margin-left: 2vw;
     gap: 2vw;
+}
+
+ul{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+}
+
+li{
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.centeredContentDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.centeredContentDiv h2{
+    margin-top: 35px;
 }
